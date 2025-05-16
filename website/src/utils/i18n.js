@@ -23,6 +23,7 @@ const resources = {
       'layout.footer.WELCOME': 'Welcome to the sample',
       
       // Chat
+      'chat.interface.NEW_CHAT': 'New',
       'chat.interface.TITLE': 'Chat',
       'chat.interface.CHAT': 'Chat',
       'chat.interface.MESSAGE_PLACEHOLDER': 'Ask a question...',

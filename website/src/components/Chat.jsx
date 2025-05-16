@@ -521,7 +521,7 @@ function Chat() {
                 onClick={handleNewChatClick}
                 title={t('chat.interface.NEW_CHAT_TITLE')}
               >
-                {t('chat.interface.NEW_CHAT')}
+                {t('chat.interface.NEW_CHAT')} {t('chat.interface.CHAT')}
               </Button>
             )}
           </Box>

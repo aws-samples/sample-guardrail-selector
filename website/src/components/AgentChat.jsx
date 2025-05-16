@@ -642,9 +642,9 @@ function AgentChat() {
                 size="small"
                 variant="outlined"
                 onClick={handleNewChatClick}
-                title={t('chat.interface.NEW_CHAT_TITLE', 'Start a new conversation')}
+                title={t('chat.interface.NEW_CHAT_TITLE')}
               >
-                {t('chat.interface.NEW_CHAT', 'New')} {t('chat.interface.CHAT')}
+                {t('chat.interface.NEW_CHAT')} {t('chat.interface.CHAT')}
               </Button>
             )}
           </Box>
