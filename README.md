@@ -158,6 +158,38 @@ Key component interactions:
   - pgvector extension for vector operations
   - Serverless v2 for cost optimization
 
+## Knowledge Base Management
+
+### Adding Documents to the Knowledge Base
+
+The application includes an automatic document ingestion pipeline that processes files placed in the designated knowledge base folder:
+
+```
+infrastructure/knowledgebase/
+```
+
+To add documents to your knowledge base:
+
+1. Place your files in the `infrastructure/knowledgebase/` directory
+   - Supported formats: PDF, TXT, DOCX, MD, HTML, CSV
+   - Files should contain text-based content for optimal processing
+
+2. Deploy or redeploy the application:
+   ```bash
+   npm run deploy
+   # or any of the other deployment commands
+   ```
+
+3. During deployment, the system will:
+   - Detect new or modified files in the knowledge base folder
+   - Process and chunk the documents appropriately
+   - Extract embeddings using Bedrock
+   - Store vectors in your selected vector database (OpenSearch or Aurora PostgreSQL)
+
+Files added to this directory are automatically synchronized with your knowledge base on each deployment, making it easy to keep your knowledge base up-to-date with the latest information.
+
+For large document collections, consider organizing files into subdirectories within the knowledge base folder for better management. The ingestion process will recursively scan all subdirectories.
+
 ### API Gateway
 - REST API with CORS support
 - Endpoints for agent interaction, knowledge base queries, and guardrail management
