@@ -1,6 +1,6 @@
 # Bedrock Knowledge Base Chat Application with Guardrails
 
-A secure and scalable chat application that leverages AWS Bedrock for knowledge base interactions with configurable guardrails, supporting both OpenSearch and Aurora PostgreSQL vector storage options.
+A chat application that leverages AWS Bedrock for knowledge base interactions with configurable guardrails, supporting both OpenSearch and Aurora PostgreSQL vector storage options.
 
 This project implements a web-based chat interface that connects to AWS Bedrock for intelligent responses, with built-in guardrails for content safety and data protection. The application provides vector-based knowledge retrieval using either Amazon OpenSearch Serverless or Aurora PostgreSQL, allowing organizations to maintain control over sensitive information while leveraging the power of large language models.
 
