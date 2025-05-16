@@ -49,9 +49,17 @@ npm run build
 # Deploy with OpenSearch (default)
 npm run deploy
 
-# Or deploy with Aurora PostgreSQL
+# Deploy with OpenSearch and local debugging enabled
+npm run deploy:local
+
+# Deploy with Aurora PostgreSQL
 npm run deploy:aurora
+
+# Deploy with Aurora PostgreSQL and local debugging enabled
+npm run deploy:local:aurora
 ```
+
+The `:local` deployment options configure the Lambda functions with local debugging capabilities, which is useful when you need to troubleshoot issues or monitor detailed execution logs.
 
 ### Quick Start
 
@@ -63,6 +71,17 @@ aws cloudformation describe-stacks --stack-name sample-gs --query 'Stacks[0].Out
 2. Access the web interface using the CloudFront URL.
 
 3. Start chatting with the knowledge base by entering queries in the chat interface.
+
+### Local Development
+
+To run the frontend application locally for development:
+
+```bash
+# Start the React development server
+npm run dev
+```
+
+This will launch the website in development mode with hot reloading enabled. The local development server typically runs on http://localhost:3000 (or another port if 3000 is in use).
 
 ### More Detailed Examples
 
