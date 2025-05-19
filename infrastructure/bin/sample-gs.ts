@@ -20,5 +20,6 @@ new SampleGSStack(app, 'SampleGSStack', {
   enableLocalhost: enableLocalhost,
   prefix: prefix,
   stackName: stackName,
-  knowledgeBaseType: knowledgeBaseType
+  knowledgeBaseType: knowledgeBaseType,
+  description: 'AWS Sample Code (uksb-tgh36jjfek)'
 });
